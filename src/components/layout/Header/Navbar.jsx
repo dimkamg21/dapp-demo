@@ -44,7 +44,14 @@ const Navbar = ({
             exact
             color="inherit"
             size="large"
-            sx={{ fontWeight: 500, borderRadius: 5 }}
+            sx={{
+              fontWeight: 500,
+              borderRadius: 5,
+              '&.activeNavLink': {
+                color: '#333333',
+                backgroundColor: 'rgba(0,0,0,0.1)',
+              },
+            }}
           >
             {link.label}
           </Button>
@@ -56,7 +63,14 @@ const Navbar = ({
           exact
           color="inherit"
           size="large"
-          sx={{ fontWeight: 500, borderRadius: 5 }}
+          sx={{
+            fontWeight: 500,
+            borderRadius: 5,
+            '&.activeNavLink': {
+              color: '#333333',
+              backgroundColor: 'rgba(0,0,0,0.1)',
+            },
+          }}
         >
           {/* <Badge
             badgeContent={
@@ -64,7 +78,7 @@ const Navbar = ({
                 <span className="pulse"></span>
                 <span style={{color: 'rgba(255, 255, 255, .8)', fontWeight: 500, letterSpacing: 1}}>Live</span>
               </Stack>
-            } 
+            }
             color="warning"
           >
           </Badge> */}

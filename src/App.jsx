@@ -15,6 +15,7 @@ import Swap from './containers/swap';
 import Presale from './containers/pre-sale';
 import Mint from './containers/mint';
 import Stake from './containers/stake';
+import StakingPage from './containers/newStake.jsx';
 
 const App = () => {
   const { library, account } = useWeb3React();
@@ -39,7 +40,7 @@ const App = () => {
           <Route exact path="/nfts" component={NFTs} />
           <Route exact path="/pre-sale" component={Presale} />
           <Route exact path="/mint" component={Mint} />
-          <Route exact path="/stake" component={Stake} />
+          <Route exact path="/stake" component={StakingPage} />
           <Route exact path="/nonauthenticated">
             <>Please login using the "Authenticate" button</>
           </Route>

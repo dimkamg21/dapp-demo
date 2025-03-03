@@ -9,7 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LanguageIcon from '@mui/icons-material/Language';
 import IconButton from '@mui/material/IconButton';
 import Chip from '@mui/material/Chip';
-import MediumIcon from '../../ui/icons/Medium';
+import MediumIcon from '../../ui/icons/Medium.jsx';
 
 const data = [
   { label: 'Swap rate', value: '1 ELO=TBD $' },

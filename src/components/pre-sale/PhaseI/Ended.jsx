@@ -8,7 +8,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import PRESALE_ABI from '../../../contracts/presale.json';
-import Alert from '../../ui/Alert';
+import Alert from '../../ui/Alert.jsx';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
 

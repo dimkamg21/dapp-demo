@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import PRESALE_ABI from '../../../contracts/presale.json';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import Alert from '../../ui/Alert';
+import Alert from '../../ui/Alert.jsx';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
 import moment from 'moment';

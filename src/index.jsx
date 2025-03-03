@@ -4,41 +4,10 @@ import App from './App';
 import { MoralisProvider } from 'react-moralis';
 import './index.css';
 import { MoralisDappProvider } from './providers/MoralisDappProvider/MoralisDappProvider';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Web3ReactProvider } from '@web3-react/core';
 import { ethers } from 'ethers';
-
-const theme = createTheme({
-  palette: {
-    mode: 'light',
-    primary: {
-      //main: '#1a90ff',
-      main: '#1cac1d',
-    },
-    neutral: {
-      main: '#f8f9f9',
-    },
-  },
-  typography: {
-    fontFamily: ['Poppins', 'sans-serif'].join(','),
-  },
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        text: {
-          fontWeight: 600,
-          textTransform: 'inherit',
-        },
-        contained: {
-          fontWeight: 700,
-          textTransform: 'inherit',
-          borderRadius: 25,
-        },
-      },
-    },
-  },
-});
+import CustomThemeProvider from './config/CustomThemeProvider.jsx';
 
 const POLLING_INTERVAL = 12000;
 
@@ -60,10 +29,10 @@ const Application = () => {
     <MoralisProvider appId={APP_ID} serverUrl={SERVER_URL}>
       <Web3ReactProvider getLibrary={getLibrary}>
         <MoralisDappProvider>
-          <ThemeProvider theme={theme}>
+          <CustomThemeProvider>
             <CssBaseline />
             <App />
-          </ThemeProvider>
+          </CustomThemeProvider>
         </MoralisDappProvider>
       </Web3ReactProvider>
     </MoralisProvider>

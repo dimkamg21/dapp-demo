@@ -1,7 +1,7 @@
 import React from 'react';
 import Countdown from 'react-countdown';
-import Opened from './Opened';
-import CountingDown from './CountingDown';
+import Opened from './Opened.jsx';
+import CountingDown from './CountingDown.jsx';
 
 const opensIn = 1649113200000;
 //const opensIn = 1649980800000; // UTC 15th Apirl 2024 unixtimestamp

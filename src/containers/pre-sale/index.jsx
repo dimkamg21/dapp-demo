@@ -38,7 +38,7 @@ export default function PreSale() {
         }}
       >
         <Container>
-          {/* <Typography 
+          {/* <Typography
             color="text.primary"
             sx={{ fontWeight: 'bold', mb: 2, textAlign: 'center' }}
             variant="h4"

@@ -43,13 +43,15 @@ const SideDrawer = ({
         zIndex: 10000,
         display: {
           xs: 'block',
-          sm: 'none',
         },
         '& .MuiDrawer-paper': {
           boxSizing: 'border-box',
-          width: drawerWidth,
+          minWidth: drawerWidth,
+          width: '100%',
+          maxWidth: '70%',
           border: 0,
           boxShadow: 'none',
+          pt: '10px'
         },
       }}
       BackdropProps={{
@@ -82,13 +84,13 @@ const SideDrawer = ({
             selected={router.pathname === presaleLink.href}
             sx={{ display: 'flex', alignItems: 'center', width: '100%' }}
           >
-            {/* <Badge 
+            {/* <Badge
               badgeContent={
                 <Stack direction="row" spacing={1} alignItems="center">
                   <span className="pulse"></span>
                   <span style={{color: 'rgba(255, 255, 255, .8)', fontWeight: 500, letterSpacing: 1}}>Live</span>
                 </Stack>
-              } 
+              }
               color="warning"
             >
             </Badge> */}
